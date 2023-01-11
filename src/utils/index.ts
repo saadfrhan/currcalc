@@ -1,5 +1,6 @@
-import chalk from "chalk";
-import chalkAnimation from "chalk-animation";
+import chalk from 'chalk';
+import chalkAnimation from 'chalk-animation';
+import inquirer from 'inquirer';
 
 const sleep = (ms: number = 2000) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -15,3 +16,9 @@ export default async function welcome() {
   rainbowTitle.stop();
   await sleep(1000);
 }
+
+export const doReplay = async (): Promise<{ continue: boolean }> => await inquirer.prompt({
+  type: 'confirm',
+  name: 'continue',
+  message: 'Would you like to continue?',
+});
