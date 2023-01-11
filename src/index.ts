@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env -S ts-node --files
 
 import inquirer from "inquirer";
 import welcome, { doReplay } from "./utils/index.js";
@@ -10,10 +10,7 @@ import { searchForTargetAmount } from "./api/index.js";
 inquirer.registerPrompt("autocomplete", inquirerPrompt);
 
 async function main() {
-  console.log("invoked");
   while (true) {
-    console.log("invoked");
-
     const { from, to, amount } = await inquirer.prompt(questions);
     const { date, result, rate } = (await searchForTargetAmount({
       from,
@@ -21,9 +18,9 @@ async function main() {
       amount,
     }))!;
     console.log(result);
-    console.log(amount !== 1 ? rate : "");
+    amount !== 1 && console.log(rate);
     console.log(date);
-    if ((await doReplay()).continue) {
+    if (!(await doReplay()).continue) {
       break;
     }
   }

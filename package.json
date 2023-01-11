@@ -10,7 +10,7 @@
   },
   "main": "dist/index.js",
   "scripts": {
-    "start": "tsc && node dist/index",
+    "start": "tsc && node dist/index.js",
     "build": "tsc"
   },
   "bin": "dist/index.js",
@@ -25,7 +25,6 @@
   },
   "devDependencies": {
     "@types/chalk-animation": "^1.6.1",
-    "@types/dotenv": "^8.2.0",
     "@types/inquirer": "^9.0.2",
     "@types/inquirer-autocomplete-prompt": "^3.0.0",
     "@types/node": "^18.11.7",
