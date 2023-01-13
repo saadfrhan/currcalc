@@ -11,7 +11,7 @@ import chalk from "chalk";
 const baseUrl = "https://api.apilayer.com/exchangerates_data";
 const apiOptions = {
   headers: {
-    apikey: process.env.API_KEY,
+    apikey: process.env.CURR_API_KEY,
   },
 };
 
@@ -58,11 +58,12 @@ export async function searchForTargetAmount({
       `${baseUrl}/convert?to=${to}&from=${from}&amount=${amount}`,
       apiOptions
     );
+    const roundedResult = Math.floor(result);
     return {
       date: `Last updated: ${new Date(date).toDateString()}`,
       rate: `1 ${from} = ${Math.floor(rate).toFixed(2)} ${to}`,
       result: `${amount} ${from} = ${chalk.yellow(
-        `${Math.floor(result).toFixed(2)} ${to}`
+        `${roundedResult === 0 ? result : roundedResult.toFixed(2)} ${to}`
       )}`,
     };
   } catch (error) {

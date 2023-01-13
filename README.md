@@ -17,7 +17,7 @@ Currency Converter CLI with Node.js, TypeScript, and Inquirer.
 
 ```bash
     # Windows
-    set API_KEY=xxxxxxxxXXXXXXXX
+    set CURR_API_KEY=xxxxxxxxXXXXXXXX
     # Mac & Linux
     export API_KEY=xxxxxxxxXXXXXXXX
 ```

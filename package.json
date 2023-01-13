@@ -1,6 +1,6 @@
 {
   "name": "currconv",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Currency Convert with Node.js, TypeScript, Axios, and Inquirer.",
   "homepage": "https://github.com/SaadFarhanIdress/node-inquirer-curr-converter-cli#readme",
   "type": "module",
