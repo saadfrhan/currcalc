@@ -1,4 +1,4 @@
-#!/usr/bin/env -S ts-node --files
+#!/usr/bin/env node
 
 import inquirer from "inquirer";
 import welcome, { doReplay } from "./utils/index.js";
