@@ -16,10 +16,10 @@ Currency Converter CLI with Node.js, TypeScript, and Inquirer.
 1. Set the API Key as environment variable.
 
 ```bash
-    # Windows
-    set CURR_API_KEY=xxxxxxxxXXXXXXXX
-    # Mac & Linux
-    export API_KEY=xxxxxxxxXXXXXXXX
+# Windows
+set CURR_API_KEY=xxxxxxxxXXXXXXXX
+# Mac & Linux
+export API_KEY=xxxxxxxxXXXXXXXX
 ```
 
 1. Run the package.
