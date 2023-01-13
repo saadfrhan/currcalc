@@ -1,4 +1,4 @@
-# node-inquirer-curr-converter-cli
+# currconv
 
 Currency Converter CLI with Node.js, TypeScript, and Inquirer.
 
@@ -20,4 +20,10 @@ Currency Converter CLI with Node.js, TypeScript, and Inquirer.
     set CURR_API_KEY=xxxxxxxxXXXXXXXX
     # Mac & Linux
     export API_KEY=xxxxxxxxXXXXXXXX
+```
+
+1. Run the package.
+
+```bash
+npx currconv
 ```
