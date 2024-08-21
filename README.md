@@ -12,7 +12,7 @@ Currency Converter CLI with Node.js, TypeScript, and Inquirer.
     <img src="./images/api_site.png" />
 </a>
 
-1. Create an account on the site, subscribe to a plan and copy the API Key.
+1. Create an account on the site, subscribe to the free plan and copy the API Key.
 1. Set the API Key as environment variable.
 
 ```bash
