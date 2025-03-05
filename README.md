@@ -2,10 +2,7 @@
 
 Advanced Currency Converter CLI with Node.js, TypeScript, and Interactive Features
 
-<video width="600" controls>
-  <source src="preview.webm" type="video/webm">
-  Your browser does not support the video tag.
-</video>
+<img src="./preview.gif" />
 
 ## Features
 
