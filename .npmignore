@@ -1,0 +1,21 @@
+# Development files
+src/
+tests/
+.github/
+.eslintrc.js
+jest.config.js
+tsconfig.json
+*.log
+*.tgz
+
+# Environment files
+.env
+.env.*
+
+# Editor files
+.vscode/
+.idea/
+
+# Images and docs not needed in the package
+images/
+docs/
